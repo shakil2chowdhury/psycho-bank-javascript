@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Psycho Bank</title>
+</head>
+
+<body>
+    <!--Login Area-->
+    <div id="loginArea">
+        <h1 class="text-center">Welcome To Psycho Bank</h1>
+        <div class="submitArea">
+            <h2>Login</h2>
+            <br>
+            <input type="text" class="form-control" required>
+            <br>
+            <input type="password" name="" id="pswd" class="form-control" required>
+            <br>
+            <button class="btn btn-success" id="login">Login</button>
+        </div>
+    </div>
+
+    <!--Dashboard Area-->
+    <div id="dashBoard">
+        <h1 class="text-center">Welcome to Dashboard</h1>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="deposit itemCard">
+                    <h5>Deposit</h5>
+                    <h2>$<span id="addDeposit">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw itemCard">
+                    <h5>Withdraw</h5>
+                    <h2>$<span id="currentWithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance itemCard">
+                    <h5>Balance</h5>
+                    <h2>$<span id="currentBalance">1030</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submitArea">
+                    <h2>Deposit</h2>
+                    <input id="depositAmount" type="text" class="form-control"
+                        placeholder="Enter the $ amount you want to deposit">
+                    <br>
+                    <button id="depositAmountBtn" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submitArea">
+                    <h2>Withdraw</h2>
+                    <input type="text" class="form-control" placeholder="Enter the $ amount you want to withdraw"
+                        id="withdrawAmount">
+                    <br>
+                    <button class="btn btn-danger" id="withDraw">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

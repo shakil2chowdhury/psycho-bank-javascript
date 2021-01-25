@@ -1,0 +1,33 @@
+body {
+    padding: 100px;
+}
+
+.submitArea {
+    margin-top: 40px;
+    padding: 40px;
+    box-shadow: 3px 3px 10px grey;
+    border-radius: 10px;
+}
+
+#dashBoard {
+    display: none;
+}
+
+.deposit {
+    background-color: rgb(32, 106, 218);
+}
+
+.withdraw {
+    background-color: indigo;
+}
+
+.balance {
+    background-color: rgb(35, 105, 7);
+}
+
+.itemCard {
+    margin: 0 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
